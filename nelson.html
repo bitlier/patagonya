@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="./index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Home</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Latest</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Greatest Hits</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Contact</a>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Category</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Data Science</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Design</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Hardware Engineering</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Product Management</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="/software/snelson/">Software Engineering</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Samuel Nelson</h1>
+      <p><b>Sam</b> is a software engineer at Barbelly, which is a learning platform for professional athletes. He is a front-end developer in a love-hate relationship with React and has been coding professionally for 8 years.</p>
+
+      <h3>Work</h3>
+
+      <h5><b>How does your company make money?</b></h5>
+      <p>I'm not really sure either.</p>
+
+      <h5><b>What problems do you solve these days?</b></h5>
+      <p>I work on GraphQL exclusively.</p>
+
+      <h5><b>How do you think about code correctness?</b></h5>
+      <p>I try to be clear, not clever. If you think about it, we spend a lot more time reading code than writing it.</p>
+
+      <h3>Day in the Life</h3>
+
+      <h5><b>What's a typical day like?</b></h5>
+      <p>Stand up, sit down, refine features with my product team. We deploy daily.</p>
+
+      <h5><b>Tell us about your home office set up.</b></h5>
+      <p>Photo goes here.</p>
+      <p>My favorite standing desk, keyboard, headphones.</p>
+
+      <h5><b>What do you like to do after work?</b></h5>
+      <p>I listen to vinyl records—mostly Nirvana or Ella Fitzgerald—as I sip red wine.</p>
+
+      <h3>Technology</h3>
+      
+      <h5><b>Any programming language you want to pick up?</b></h5>
+      <p>Probably Elixir</p>
+
+      <h5><b>Any open source project of interest?</b></h5>
+      <p>I find Svelte pretty dope.</p>
+
+      <h5><b>Any conference or meetup?</b></h5>
+      <p>I don't like to travel, but I attend CES every year.</p>
+      
+      <h5><b>If you were to build an application today, what technologies would you use?</b></h5>
+      <p>Ruby on Rails served via Nginx. No React.</p>
+
+      <h3>Reading</h3>
+
+      <h5><b>Do you follow any tech blogs?</b></h5>
+      <p>I read all the big ones, including Netflix and Uber.</p>
+
+      <h5><b>What books have helped you become more effective at what you do?</b></h5>
+      <p><a href="https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321">Designing Data-Intensive Applications</a></p>
+
+      <h3>Career</h3>
+
+      <h5><b>Where do you see yourself 5 years from now?</b></h5>
+      <p>I want to move to San Diego with my partner and start a family.</p>      
+
+      <h5><b>What career advice you wish someone had told you when you started?</b></h5>
+      <p>"You don't have to agree with every point people make, but it might be worth understanding where they're coming from."</p>      
+
+      <h5><b>In what ways does your company support career development?</b></h5>
+      <p>I get an annual stipend of $1500. A sabbatical after 3 years.</p>
+
+
+        
+        </p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+    <div class="w3-container w3-theme-l1">
+      <p>This site is overengineered with Go</p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
